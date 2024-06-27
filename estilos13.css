@@ -1,0 +1,382 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos específicos para los formularios */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* Estilos para la sección de login */
+#login_section {
+    padding: 2vw 0 10vw;
+    text-align: center;
+    background-color: #f9f9f9; /* Fondo claro para destacar el formulario */
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal de bienvenida */
+.login_title_bienvenido {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: #000;
+    animation: parpadeoTerror 5s infinite;
+}
+
+/* Título del formulario de login */
+.login_title {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+    color: #C81010;
+}
+
+/* Imagen parpadeante */
+@keyframes parpadeoImagen {
+    0%, 100% {
+        background-image: url('imagenes/cel.png');
+    }
+    50% {
+        background-image: url('imagenes/cel-roto.png');
+    }
+}
+
+.imagen_parpadeante {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    animation: parpadeoImagen 5s infinite;
+    margin: 0 auto 20px;
+}
+
+/* Animación de parpadeo del título */
+@keyframes parpadeoTerror {
+    0%, 100% {
+        opacity: 1;
+        color: rgb(54, 54, 54);
+    }
+    50% {
+        opacity: 0;
+        color: black;
+    }
+}
+
+/* Estilo de los campos del formulario */
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 80%;
+    margin: 10px auto;
+}
+
+input[type="email"], input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block;
+}
+
+/* Botones de los formularios */
+.login_button_div, .register_button_div {
+    padding-top: 2vw;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #C81010;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #A00E0E;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #870B0B;
+    transform: scale(1);
+}
+ /* Estilos para la sección de registro */
+#registro_section {
+    padding: 2vw 0 10vw;
+    text-align: center;
+    background-color: #f9f9f9; /* Fondo claro para destacar el formulario */
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario de registro */
+.registro_title {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+    color: #C81010;
+}
+
+/* Estilo de los campos del formulario */
+.registro_form {
+    margin: 20px 0;
+}
+
+.registro_label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.registro_input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block;
+}
+
+/* Botón de registro */
+.registro_button_div {
+    padding-top: 2vw;
+    text-align: center;
+}
+
+.registro_button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #C81010;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.registro_button:hover {
+    background-color: #A00E0E;
+    transform: scale(1.05);
+}
+
+.registro_button:active {
+    background-color: #870B0B;
+    transform: scale(1);
+}
+/* INICIO CSS*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.centered {
+    text-align: center;
+}
+.celular-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.celular-item {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+    text-align: left; /* To align text left inside each item */
+}
+
+.celulares_ventas {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si es necesario */
+    gap: 10px; /* Espaciado entre los elementos */
+}
+
+.celular-info {
+    flex: 1 1 calc(33.33% - 20px); /* Permite que los elementos se ajusten a un ancho de 33.33% menos el espaciado */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    padding: 10px; /* Espaciado interno para cada elemento */
+    margin: 0; /* Eliminamos el margen adicional */
+}
+
+.numero {
+    margin-right: 10px;
+}
+.precio
+{
+    margin-right: 30vw;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 10px 50px 10px 10px;
+    background-color: #ff1616;
+    border-radius: 10px;
+}
+.modelo-precio {
+    justify-content: space-between;
+    margin-bottom: 20vw;
+}
+
+.descripcion {
+    margin-top: 10px;
+}
+.img-imagen
+{
+    padding: 4px 4px 4px 4px;
+    background-color: #b4b5b7;
+    width: 15vw;
+}
+.imagen {
+    
+    margin-left: -2000px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.imagen img {
+    display: block;
+    margin: 0 auto;
+}
+.titulo-bienvenido
+{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+}
+#profile-section, #sell-section, #phones-section {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #333;
+}
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+}
+img {
+    max-width: 100px;
+}
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #555;
+}
