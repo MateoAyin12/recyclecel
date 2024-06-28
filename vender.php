@@ -8,10 +8,11 @@ if (!isset($_SESSION['user_id'])) {
 }
 include 'header.php';
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "celrecycle";
+$servername = "celrecycle-sev.database.windows.net
+";
+$username = "Mateo";
+$password = "Vivaelapra2021@";
+$dbname = "celrecycle-db";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
