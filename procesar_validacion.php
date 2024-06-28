@@ -9,10 +9,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // $imei = $_POST['imei'];
 
     // Procesar la validación en la base de datos
-    $servername = "localhost";
-    $username = "tu_usuario";
-    $password = "tu_contraseña";
-    $dbname = "celrecycle";
+    $servername = "celrecycle-sev.database.windows.net
+";
+$username = "Mateo";
+$password = "Vivaelapra2021@";
+$dbname = "celrecycle-db";
 
     // Crear conexión
     $conn = new mysqli($servername, $username, $password, $dbname);
